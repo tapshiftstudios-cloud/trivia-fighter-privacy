@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trivia Fighter — Privacy Policy / Gizlilik Politikası</title>
+  <style>
+    :root {
+      color-scheme: dark light;
+      --bg: #0a0e17;
+      --fg: #e8eef8;
+      --muted: #9aa8bc;
+      --accent: #00e5ff;
+      --card: #121826;
+      --line: rgba(255, 255, 255, 0.08);
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f4f7fb;
+        --fg: #101828;
+        --muted: #475467;
+        --accent: #0077a8;
+        --card: #ffffff;
+        --line: rgba(16, 24, 40, 0.1);
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.55;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+    h1 { font-size: 1.75rem; margin: 0 0 8px; }
+    h2 { font-size: 1.15rem; margin: 28px 0 10px; color: var(--accent); }
+    p, li { color: var(--fg); }
+    .muted { color: var(--muted); font-size: 0.95rem; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px 18px;
+      margin: 16px 0;
+    }
+    .lang-switch {
+      display: flex;
+      gap: 8px;
+      margin: 18px 0 8px;
+    }
+    .lang-switch button {
+      border: 1px solid var(--line);
+      background: transparent;
+      color: var(--fg);
+      border-radius: 999px;
+      padding: 8px 14px;
+      cursor: pointer;
+    }
+    .lang-switch button.active {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .panel { display: none; }
+    .panel.active { display: block; }
+    a { color: var(--accent); }
+    ul { padding-left: 1.2rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Trivia Fighter</h1>
+    <p class="muted">Privacy Policy / Gizlilik Politikası</p>
+    <p class="muted">Effective date / Yürürlük: 15 September 2026</p>
+
+    <div class="lang-switch">
+      <button type="button" class="active" data-lang="tr">Türkçe</button>
+      <button type="button" data-lang="en">English</button>
+    </div>
+
+    <section id="panel-tr" class="panel active">
+      <div class="card">
+        <p>
+          Bu gizlilik politikası, <strong>Trivia Fighter</strong> mobil uygulaması
+          (“Uygulama”) için geçerlidir. Uygulamayı kullanarak bu metni kabul etmiş
+          sayılırsınız.
+        </p>
+        <p class="muted">
+          İletişim:
+          <a href="mailto:support@triviafighter.com">support@triviafighter.com</a>
+        </p>
+      </div>
+
+      <h2>1. Topladığımız veriler</h2>
+      <ul>
+        <li><strong>Hesap (isteğe bağlı):</strong> takma ad / kullanıcı adı ve şifre. Şifre sunucuda hash’lenerek saklanır; cihazınızda şifre tutulmaz.</li>
+        <li><strong>Oturum:</strong> giriş sonrası erişim jetonları (JWT) cihazınızda yerel olarak saklanabilir.</li>
+        <li><strong>Oyun verisi (yerel):</strong> XP, seviye, jeton, joker stoku, kozmetikler, maç geçmişi, ayarlar, görülen sorular cihazınızdaki uygulama depolamasında tutulur.</li>
+        <li><strong>Çevrimiçi oyun:</strong> çevrimiçi maç sırasında arena, dil, soru sayısı ve oyun hareketleri sunucuya iletilebilir.</li>
+        <li><strong>Satın almalar:</strong> jeton paketleri Google Play Faturalandırma üzerinden işlenir. Kart bilgileriniz bize gelmez; Google’ın kendi gizlilik politikası geçerlidir.</li>
+      </ul>
+
+      <h2>2. Toplamadığımız veriler</h2>
+      <ul>
+        <li>Reklam kimliği / reklam SDK’ları (şu an yok)</li>
+        <li>Analitik veya çökme raporlama SDK’ları (şu an yok)</li>
+        <li>Konum, kişiler, kamera, mikrofon, fotoğraf galerisi</li>
+      </ul>
+
+      <h2>3. Çevrimdışı / misafir kullanım</h2>
+      <p>
+        Uygulama, sunucu yokken yerel demo / misafir oturumu ile oynanabilir.
+        Bu modda ilerleme cihazınızda kalır; çevrimiçi hesap oluşturmadığınız
+        sürece sunucuya hesap verisi gönderilmez.
+      </p>
+
+      <h2>4. Üçüncü taraflar</h2>
+      <ul>
+        <li><strong>Google Play:</strong> uygulama dağıtımı ve uygulama içi satın alma</li>
+        <li><strong>Oyun API’si:</strong> çevrimiçi özellikler açıkken
+          <code>api.triviafighter.com</code> (veya yapılandırılan sunucu)</li>
+      </ul>
+
+      <h2>5. Saklama ve silme</h2>
+      <ul>
+        <li>Cihaz verileri: uygulamayı kaldırmak veya uygulama verisini temizlemek yerel kayıtları siler.</li>
+        <li>Sunucu hesabı: hesap silme talebi için
+          <a href="mailto:support@triviafighter.com">support@triviafighter.com</a>
+          adresine yazın; makul süre içinde işleriz.</li>
+      </ul>
+
+      <h2>6. Güvenlik</h2>
+      <p>
+        Üretim ortamında HTTPS / WSS kullanılır. Şifreler sunucuda tek yönlü hash ile
+        saklanır. Yine de hiçbir sistem %100 güvenli değildir.
+      </p>
+
+      <h2>7. Çocuklar</h2>
+      <p>
+        Uygulama 13 yaş altı çocuklara yönelik tasarlanmamıştır. 13 yaş altından
+        bilerek veri toplamayız. Ebeveynler bize ulaşarak ilgili verilerin
+        silinmesini isteyebilir.
+      </p>
+
+      <h2>8. Haklarınız</h2>
+      <p>
+        Bulunduğunuz bölgeye göre erişim, düzeltme veya silme talep edebilirsiniz.
+        Talepleriniz için iletişim adresimizi kullanın.
+      </p>
+
+      <h2>9. Değişiklikler</h2>
+      <p>
+        Bu politikayı güncelleyebiliriz. Önemli değişikliklerde yürürlük tarihini
+        güncelleriz. Uygulamayı kullanmaya devam etmeniz güncel politikayı kabul
+        ettiğiniz anlamına gelir.
+      </p>
+    </section>
+
+    <section id="panel-en" class="panel">
+      <div class="card">
+        <p>
+          This Privacy Policy applies to the <strong>Trivia Fighter</strong> mobile
+          application (“App”). By using the App, you agree to this Policy.
+        </p>
+        <p class="muted">
+          Contact:
+          <a href="mailto:support@triviafighter.com">support@triviafighter.com</a>
+        </p>
+      </div>
+
+      <h2>1. Data we collect</h2>
+      <ul>
+        <li><strong>Account (optional):</strong> nickname/username and password. Passwords are stored hashed on the server; we do not keep your password in local app storage.</li>
+        <li><strong>Session:</strong> access tokens (JWT) may be cached on your device after login.</li>
+        <li><strong>Gameplay data (on-device):</strong> XP, level, tokens, joker inventory, cosmetics, match history, settings, and seen-question memory are stored locally on your device.</li>
+        <li><strong>Online play:</strong> when playing online, arena, locale, question count, and match actions may be sent to our game server.</li>
+        <li><strong>Purchases:</strong> token packs are processed by Google Play Billing. We do not receive your full payment card details.</li>
+      </ul>
+
+      <h2>2. Data we do not collect</h2>
+      <ul>
+        <li>Advertising ID / ad SDKs (none at this time)</li>
+        <li>Analytics or crash-reporting SDKs (none at this time)</li>
+        <li>Precise location, contacts, camera, microphone, or photo library</li>
+      </ul>
+
+      <h2>3. Offline / guest mode</h2>
+      <p>
+        The App can run in a local demo/guest mode when a server is unavailable.
+        Progress stays on your device; account data is not sent to our servers
+        until you successfully sign in online.
+      </p>
+
+      <h2>4. Third parties</h2>
+      <ul>
+        <li><strong>Google Play:</strong> distribution and in-app purchases</li>
+        <li><strong>Game API:</strong> when online features are enabled,
+          <code>api.triviafighter.com</code> (or your configured host)</li>
+      </ul>
+
+      <h2>5. Retention and deletion</h2>
+      <ul>
+        <li>On-device data: uninstalling the App or clearing app data deletes local records.</li>
+        <li>Server accounts: email
+          <a href="mailto:support@triviafighter.com">support@triviafighter.com</a>
+          to request deletion; we will process requests within a reasonable time.</li>
+      </ul>
+
+      <h2>6. Security</h2>
+      <p>
+        Production traffic uses HTTPS/WSS. Passwords are stored with one-way hashing.
+        No method of transmission or storage is 100% secure.
+      </p>
+
+      <h2>7. Children</h2>
+      <p>
+        The App is not directed to children under 13. We do not knowingly collect
+        personal data from children under 13. Parents may contact us to request deletion.
+      </p>
+
+      <h2>8. Your rights</h2>
+      <p>
+        Depending on your region, you may request access, correction, or deletion
+        of your personal data by contacting us.
+      </p>
+
+      <h2>9. Changes</h2>
+      <p>
+        We may update this Policy and will revise the effective date when we do.
+        Continued use of the App means you accept the updated Policy.
+      </p>
+    </section>
+  </main>
+
+  <script>
+    const buttons = document.querySelectorAll('.lang-switch button');
+    const panels = {
+      tr: document.getElementById('panel-tr'),
+      en: document.getElementById('panel-en'),
+    };
+    buttons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const lang = btn.getAttribute('data-lang');
+        buttons.forEach((b) => b.classList.toggle('active', b === btn));
+        Object.entries(panels).forEach(([key, el]) => {
+          el.classList.toggle('active', key === lang);
+        });
+        document.documentElement.lang = lang;
+      });
+    });
+  </script>
+</body>
+</html>
